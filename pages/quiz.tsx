@@ -60,6 +60,7 @@ const Quiz: NextPage = () => {
                   width={800}
                   margin={majorScale(2)}
                   onClick={handleSelectOption}
+                  key={option.content}
                 >
                   {option.content}
                 </Option>
