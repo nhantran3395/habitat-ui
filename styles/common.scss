@@ -20,13 +20,19 @@ h5,
 h6,
 p,
 span,
-a {
+a,
+button {
   font-family: $font-family-black !important;
 }
 
 a {
   color: $primary-color !important;
   text-decoration: none;
+}
+
+span,
+p {
+  font-size: toRem(16);
 }
 
 * {
