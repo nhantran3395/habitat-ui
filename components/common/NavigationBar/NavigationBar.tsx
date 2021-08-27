@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
-import { Pane, Tablist, Tab, Link } from "evergreen-ui";
+import { Pane, Tablist, Link } from "evergreen-ui";
+import Tab from "../Tab";
 import routes from "../../../routes";
 import { IRoute } from "../../../routes/interfaces";
 
