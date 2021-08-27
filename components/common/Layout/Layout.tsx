@@ -1,7 +1,9 @@
 import React from "react";
+import Image from "next/image";
 import { ILayoutProps } from "./interfaces";
 import { Pane } from "evergreen-ui";
 import Header from "../Header";
+import styles from "./Layout.module.scss";
 
 const Layout = ({ children }: ILayoutProps) => {
   return (
@@ -14,6 +16,14 @@ const Layout = ({ children }: ILayoutProps) => {
       justifySelf="center"
       flexDirection="column"
     >
+      <Pane className={styles.bottomLeftCorner}>
+        <Image src="/images/bottom-left-corner.svg" width={400} height={400} />
+      </Pane>
+
+      <Pane className={styles.topRightCorner}>
+        <Image src="/images/top-right-corner.svg" width={400} height={400} />
+      </Pane>
+
       <Header />
       <Pane
         width="80%"

@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <Pane
       width="80%"
-      height="100px"
+      height={200}
       display="flex"
       flexDirection="column"
       alignItems="center"
