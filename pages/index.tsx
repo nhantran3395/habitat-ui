@@ -20,13 +20,13 @@ const Home: NextPage = () => {
           </Pane>
           <Pane width={500}>
             <Heading size={900} margin={majorScale(5)}>
-              "The greatest threat to our habitat is the belief that someone
-              else will save it."
+              &quot;The greatest threat to our habitat is the belief that
+              someone else will save it.&quot;
             </Heading>
 
             <Paragraph size={500} margin={majorScale(5)}>
               Curious to know how sustainable your lifestyle is? Take this quiz
-              to discover your sustainability profile and ways you can make a
+              to discover your sustainability profile &amp; ways you can make a
               difference!
             </Paragraph>
           </Pane>
