@@ -1,6 +1,6 @@
 import React from "react";
 import NextLink from "next/link";
-import { Pane, Heading, Link } from "evergreen-ui";
+import { Pane, Heading, Link, majorScale } from "evergreen-ui";
 import NavigationBar from "../NavigationBar";
 
 const appName = process.env.NEXT_PUBLIC_APP_NAME;
@@ -11,15 +11,17 @@ const Header = () => {
       width="80%"
       height="100px"
       display="flex"
+      flexDirection="column"
       alignItems="center"
-      justifyContent="space-between"
+      justifyContent="center"
+      margin={majorScale(3)}
     >
       <NextLink href="/">
         <Link
           display="flex"
-          flexDirection="row"
           alignItems="center"
           justifyContent="space-between"
+          margin={majorScale(2)}
           cursor="pointer"
         >
           <Heading size={900}>{appName}</Heading>
