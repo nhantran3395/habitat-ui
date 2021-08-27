@@ -1,0 +1,9 @@
+@import "styles/color";
+@import "styles/base";
+
+.option {
+  border: 4px solid $primary-color !important;
+  border-radius: toRem(30) !important;
+  padding: toRem(16) toRem(32) !important;
+  font-size: toRem(16) !important;
+}
