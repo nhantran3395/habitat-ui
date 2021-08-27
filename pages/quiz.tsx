@@ -5,7 +5,7 @@ const Quiz: NextPage = () => {
   return (
     <>
       <Head pageName="Quiz" description="" />
-      <div>Quiz</div>;
+      <div>Quiz</div>
     </>
   );
 };

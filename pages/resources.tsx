@@ -5,7 +5,7 @@ const Resources: NextPage = () => {
   return (
     <>
       <Head pageName="Resources" description="" />
-      <div>Resources</div>;
+      <div>Resources</div>
     </>
   );
 };

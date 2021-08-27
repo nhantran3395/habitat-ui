@@ -5,7 +5,7 @@ const SustainabilityProfile: NextPage = () => {
   return (
     <>
       <Head pageName="Sustainability Profile" description="" />
-      <div>Sustainability Profile</div>;
+      <div>Sustainability Profile</div>
     </>
   );
 };
