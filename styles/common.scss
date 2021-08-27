@@ -1,0 +1,34 @@
+@import "color";
+@import "font";
+@import "base";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  font-family: $font-family-black !important;
+}
+
+a {
+  color: $primary-color !important;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

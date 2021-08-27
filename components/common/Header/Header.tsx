@@ -2,7 +2,7 @@ import React from "react";
 import NextLink from "next/link";
 import { Pane, Heading, Link, majorScale } from "evergreen-ui";
 import NavigationBar from "../NavigationBar";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 const appName = process.env.NEXT_PUBLIC_APP_NAME;
 
