@@ -9,7 +9,7 @@ const Head = ({ pageName, description }: IHeadProps) => {
         {process.env.NEXT_PUBLIC_APP_NAME} | {pageName}
       </title>
       <meta name="description" content={description} />
-      <link rel="icon" href="./images/favicon.ico" />
+      <link rel="icon" href="/images/earth.svg" />
     </NextHead>
   );
 };

@@ -1,11 +1,15 @@
 import type { NextPage } from "next";
-import Head from "../components/Head";
+import { Pane } from "evergreen-ui";
+import Head from "../components/common/Head";
+import Layout from "../components/common/Layout";
 
 const Resources: NextPage = () => {
   return (
     <>
       <Head pageName="Resources" description="" />
-      <div>Resources</div>
+      <Layout>
+        <Pane>Resources</Pane>
+      </Layout>
     </>
   );
 };
