@@ -1,5 +1,5 @@
 export interface IQuestion {
-  question: { questionId: string, questionText: "string" },
+  questions: { questionId: string, questionText: string },
   listOptions: IOption[]
 }
 

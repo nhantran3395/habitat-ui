@@ -4,6 +4,7 @@ import {
 } from '@reduxjs/toolkit';
 import type { RootState } from '../../app/store';
 import { IQuizState } from './interfaces';
+import { mockGetQuestions } from './mockService';
 
 const initialState: IQuizState = {
   questions: [],
@@ -12,8 +13,9 @@ const initialState: IQuizState = {
 };
 
 export const getAllQuestions = createAsyncThunk('quiz/questions', async () => {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_APP_HABITAT_API}/questions/getAllQuestions`);
-  const data = await response.json();
+  // const response = await fetch(`${process.env.NEXT_PUBLIC_APP_HABITAT_API}/questions/getAllQuestions`);
+  // const data = await response.json();
+  const data = await mockGetQuestions();
   return data;
 });
 
