@@ -53,60 +53,33 @@ const Quiz: NextPage = () => {
     <>
       <Head pageName="quiz" description="" />
       <Layout>
-        <Pane
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-        >
+        <div className="flex-column-container">
           {isPending ? (
-            <Pane margin={majorScale(5)}>
+            <div className="m-5">
               <Spinner />
-            </Pane>
+            </div>
           ) : null}
           {!isPending && questions.length !== 0 ? (
             <>
-              <Pane
-                display="flex"
-                flexDirection="row"
-                alignItems="center"
-                justifyContent="center"
-                marginX={majorScale(5)}
-              >
-                <Pane
-                  display="flex"
-                  flexDirection="column"
-                  alignItems="center"
-                  justifyContent="center"
-                  height={500}
-                  marginBottom={majorScale(3)}
-                >
-                  <Heading size={900} margin={majorScale(5)} width={800}>
-                    {questions[currentQuestionIndex].questions.questionText}
-                  </Heading>
-                  <Pane
-                    display="flex"
-                    flexDirection="column"
-                    alignItems="center"
-                    justifyContent="center"
-                  >
-                    {questions[currentQuestionIndex].listOptions.map(
-                      (option) => (
-                        <Option
-                          width={800}
-                          margin={majorScale(2)}
-                          onClick={handleSelectOption}
-                          key={option.content}
-                        >
-                          {option.content}
-                        </Option>
-                      )
-                    )}
-                  </Pane>
-                </Pane>
+              <div className="flex-column-container w-60">
+                <h1>
+                  {questions[currentQuestionIndex].questions.questionText}
+                </h1>
+
+                <div className="flex-column-container">
+                  {questions[currentQuestionIndex].listOptions.map((option) => (
+                    <Option
+                      margin={majorScale(2)}
+                      onClick={handleSelectOption}
+                      key={option.content}
+                    >
+                      {option.content}
+                    </Option>
+                  ))}
+                </div>
 
                 {isQuizFinished ? <ArrowButton /> : null}
-              </Pane>
+              </div>
 
               <Pane
                 display="flex"
@@ -125,7 +98,7 @@ const Quiz: NextPage = () => {
               </Pane>
             </>
           ) : null}
-        </Pane>
+        </div>
       </Layout>
     </>
   );
