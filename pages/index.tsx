@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           justifyContent="center"
         >
           <Pane margin={majorScale(5)}>
-            <Image src="/images/earth.svg" width={500} height={500} />
+            <Image src="/images/earth.svg" width={600} height={600} />
           </Pane>
           <Pane width={500} margin={majorScale(5)}>
             <Heading size={900} marginY={majorScale(3)}>

@@ -2,11 +2,12 @@
 @import "styles/base";
 
 .option {
-  border: 4px solid $primary-color !important;
+  border: toRem(4) solid $primary-color !important;
   border-radius: toRem(30) !important;
   padding: toRem(16) toRem(32) !important;
   font-size: toRem(16) !important;
   cursor: pointer;
+  filter: drop-shadow(toRem(0) toRem(5) toRem(4) rgba(0, 0, 0, 0.25));
 
   &:hover {
     border-color: $secondary-color !important;
