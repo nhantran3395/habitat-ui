@@ -33,7 +33,7 @@ const MyHabitat: NextPage = () => {
           </div>
           <div className={`flex-column-container m-3 w-20 ${styles.habitat}`}>
             <Image
-              src="/images/conscious_consumer.svg"
+              src="/images/conscious-consumer.svg"
               width={400}
               height={700}
             />
@@ -46,7 +46,7 @@ const MyHabitat: NextPage = () => {
           </div>
           <div className={`flex-column-container m-3 w-20 ${styles.habitat}`}>
             <Image
-              src="/images/curious_explorer.svg"
+              src="/images/curious-explorer.svg"
               width={300}
               height={500}
             />

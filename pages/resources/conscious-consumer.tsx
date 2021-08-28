@@ -3,7 +3,7 @@ import Image from "next/image";
 import Head from "../../components/common/Head";
 import Layout from "../../components/common/Layout";
 
-const Resources: NextPage = () => {
+const ConsciousConsumerResources: NextPage = () => {
   return (
     <>
       <Head pageName="my habitat" description="" />
@@ -122,7 +122,7 @@ const Resources: NextPage = () => {
 
               <h4 className="align-self-start">Green Podcast</h4>
 
-              <h2 className="secondary">
+              <h2 className="secondary align-self-start">
                 Good Together: Ethical, Eco-Friendly, Sustainable Living
               </h2>
 
@@ -144,7 +144,7 @@ const Resources: NextPage = () => {
 
               <h4 className="align-self-start">Green Living</h4>
 
-              <h2 className="secondary">
+              <h2 className="secondary align-self-start">
                 Slowood: Your Zero-Waste Organic Grocery Store
               </h2>
 
@@ -170,7 +170,7 @@ const Resources: NextPage = () => {
 
               <h4 className="align-self-start">Green Home</h4>
 
-              <h2 className="secondary">
+              <h2 className="secondary align-self-start">
                 How to Make Your Home Environmentally Friendly
               </h2>
 
@@ -194,4 +194,4 @@ const Resources: NextPage = () => {
   );
 };
 
-export default Resources;
+export default ConsciousConsumerResources;
