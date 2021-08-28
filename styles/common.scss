@@ -73,10 +73,6 @@ a {
   text-align: right;
 }
 
-.w-80 {
-  widht: 80%;
-}
-
 .w-40 {
   width: 40%;
 }
@@ -87,6 +83,14 @@ a {
 
 .w-60 {
   width: 60%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .h-20 {
@@ -131,6 +135,10 @@ a {
 .my-5 {
   margin-top: toRem(40);
   margin-bottom: toRem(40);
+}
+
+.ml-1 {
+  margin-left: toRem(8);
 }
 
 .flex-column-container {

@@ -1,13 +1,14 @@
 @import "styles/base";
+@import "styles/color";
 
 .bottomLeftCorner {
-  bottom: toRem(-20);
-  left: toRem(-20);
+  bottom: 0;
+  left: 0;
 }
 
 .topRightCorner {
-  top: toRem(-20);
-  right: toRem(-20);
+  top: 0;
+  right: 0;
 }
 
 .bottomLeftCorner,
