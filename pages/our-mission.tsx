@@ -6,7 +6,7 @@ import Layout from "../components/common/Layout";
 const OurMission: NextPage = () => {
   return (
     <>
-      <Head pageName="Our Mission" description="" />
+      <Head pageName="our mission" description="" />
       <Layout>
         <Pane>Our Mission</Pane>
       </Layout>

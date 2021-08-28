@@ -9,7 +9,7 @@ import Button from "../../components/common/Button";
 const OurMission: NextPage = () => {
   return (
     <>
-      <Head pageName="Quiz Results" description="" />
+      <Head pageName="quiz results" description="" />
       <Layout>
         <Pane
           display="flex"

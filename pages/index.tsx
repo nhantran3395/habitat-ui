@@ -10,7 +10,7 @@ import SocialNetworkBar from "../components/common/SocialNetworkBar";
 const Home: NextPage = () => {
   return (
     <>
-      <Head pageName="Home" description="" />
+      <Head pageName="home" description="" />
       <Layout>
         <Pane
           display="flex"

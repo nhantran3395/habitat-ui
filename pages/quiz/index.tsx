@@ -51,7 +51,7 @@ const Quiz: NextPage = () => {
 
   return (
     <>
-      <Head pageName="Quiz" description="" />
+      <Head pageName="quiz" description="" />
       <Layout>
         <Pane
           display="flex"

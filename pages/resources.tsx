@@ -6,7 +6,7 @@ import Layout from "../components/common/Layout";
 const Resources: NextPage = () => {
   return (
     <>
-      <Head pageName="Resources" description="" />
+      <Head pageName="resources" description="" />
       <Layout>
         <Pane>Resources</Pane>
       </Layout>

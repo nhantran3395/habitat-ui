@@ -9,7 +9,7 @@ import Button from "../components/common/Button";
 const MyHabitat: NextPage = () => {
   return (
     <>
-      <Head pageName="My Habitat" description="" />
+      <Head pageName="my habitat" description="" />
       <Layout>
         <Pane
           display="flex"
