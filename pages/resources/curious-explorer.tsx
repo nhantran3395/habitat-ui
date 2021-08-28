@@ -133,8 +133,9 @@ const CuriousExplorerResources: NextPage = () => {
                 Brightly.eco by eco-experts Laura Alexander Wittig and Liza
                 Moiseeva, features daily, actionable tips to help you live your
                 life more sustainably. Start changing the world by listening to
-                a new, bite-sized episode every week. For more info, visit{" "}
-                <a>https://brightly.eco/podcast</a>
+                a new, bite-sized episode every week.
+                <br />
+                For more info, visit <a>https://brightly.eco/podcast</a>
               </p>
             </div>
 
