@@ -1,13 +1,6 @@
 @import "styles/color";
 
 .arrowButton {
-  align-self: center;
-  justify-self: center;
-
-  h2 {
-    color: $primary-color !important;
-  }
-
   &:hover {
     h2 {
       color: $secondary-color !important;
