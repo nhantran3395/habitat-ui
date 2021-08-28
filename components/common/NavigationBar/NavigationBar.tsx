@@ -4,11 +4,12 @@ import { useRouter } from "next/router";
 import Tab from "../Tab";
 import routes from "../../../routes";
 import { IRoute } from "../../../routes/interfaces";
+import { route } from "next/dist/server/router";
 
 const NavigationBar = () => {
   const router = useRouter();
   const currentRouteIdx = routes.findIndex(
-    (route) => route.path === router.pathname
+    (route) => route.path.split("/")[1] === router.pathname.split("/")[1]
   );
 
   const [selectedIndex, setSelectedIndex] = useState<number>(currentRouteIdx);
