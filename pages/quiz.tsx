@@ -93,6 +93,7 @@ const Quiz: NextPage = () => {
                   <QuestionIndicator
                     key={question.questions.questionText}
                     isCurrent={questionIdx === currentQuestionIndex}
+                    isPrevious={questionIdx < currentQuestionIndex}
                   />
                 ))}
               </Pane>

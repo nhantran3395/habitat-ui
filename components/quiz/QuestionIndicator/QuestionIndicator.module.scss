@@ -8,3 +8,9 @@
     fill: $secondary-color !important;
   }
 }
+
+.indicatorPrevious {
+  > svg {
+    fill: $primary-color !important;
+  }
+}
