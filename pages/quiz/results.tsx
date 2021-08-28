@@ -11,52 +11,34 @@ const OurMission: NextPage = () => {
     <>
       <Head pageName="quiz results" description="" />
       <Layout>
-        <Pane
-          display="flex"
-          flexDirection="row"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <Pane
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-            width={500}
-            margin={majorScale(5)}
-          >
-            <Text size={500}>You are the</Text>
+        <div className="flex-row-container">
+          <div className="flex-column-container w-40">
+            <span>You are the</span>
 
-            <Heading size={900} marginY={majorScale(2)} className="secondary">
-              Conscious Consumer
-            </Heading>
+            <h1 className="secondary">Conscious Consumer</h1>
 
-            <Heading size={600}>Slow ecological steps</Heading>
+            <h3 className="m-1">Slow ecological steps</h3>
 
-            <Paragraph
-              size={500}
-              marginY={majorScale(3)}
-              className="text-center"
-            >
+            <p className="text-center">
               Timelessness, versatility and simplicity are some of your core
               beliefs. You’re constantly pushing yourself to make wiser choices
               to go green, whenever it doesn’t slip your mind. The complexities
               of sustainability sometimes overwhelm you but you hold onto the
               building blocks of an eco-lifestyle.
-            </Paragraph>
+            </p>
 
             <NextLink href="/resources">
               <Button marginY={majorScale(2)}>Read More</Button>
             </NextLink>
-          </Pane>
-          <Pane marginX={majorScale(5)}>
+          </div>
+          <div>
             <Image
               src="/images/conscious_consumer.svg"
-              width={400}
-              height={600}
+              width={379}
+              height={630}
             />
-          </Pane>
-        </Pane>
+          </div>
+        </div>
       </Layout>
     </>
   );
