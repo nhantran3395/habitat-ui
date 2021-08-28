@@ -1,0 +1,10 @@
+@import "color";
+
+.habitat {
+  &:hover {
+    p,
+    h2 {
+      color: $secondary-color !important;
+    }
+  }
+}

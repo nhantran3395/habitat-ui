@@ -5,6 +5,7 @@ import { majorScale } from "evergreen-ui";
 import Head from "../components/common/Head";
 import Layout from "../components/common/Layout";
 import Button from "../components/common/Button";
+import styles from "../styles/MyHabitat.module.scss";
 
 const MyHabitat: NextPage = () => {
   return (
@@ -22,7 +23,7 @@ const MyHabitat: NextPage = () => {
               <Button margin={majorScale(3)}>Take the Quiz</Button>
             </NextLink>
           </div>
-          <div className="flex-column-container m-3 w-20">
+          <div className={`flex-column-container m-3 w-20 ${styles.habitat}`}>
             <Image src="/images/savvy_swapper.svg" width={300} height={500} />
             <h2 className="text-center">Savvy Swapper</h2>
             <p className="text-center">
@@ -30,7 +31,7 @@ const MyHabitat: NextPage = () => {
               it’s no doubt that you’re called a swapaholic.
             </p>
           </div>
-          <div className="flex-column-container m-3 w-20">
+          <div className={`flex-column-container m-3 w-20 ${styles.habitat}`}>
             <Image
               src="/images/conscious_consumer.svg"
               width={400}
@@ -43,7 +44,7 @@ const MyHabitat: NextPage = () => {
               to go green, whenever it doesn’t slip your mind.
             </p>
           </div>
-          <div className="flex-column-container m-3 w-20">
+          <div className={`flex-column-container m-3 w-20 ${styles.habitat}`}>
             <Image
               src="/images/curious_explorer.svg"
               width={300}
