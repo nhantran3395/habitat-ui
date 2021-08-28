@@ -18,11 +18,15 @@ h3,
 h4,
 h5,
 h6,
-p,
-span,
 a,
 button {
-  font-family: $font-family-black !important;
+  font-family: $font-family-heavy !important;
+}
+
+p,
+span {
+  font-family: $font-family-roman !important;
+  font-size: toRem(16);
 }
 
 h1,
@@ -37,11 +41,6 @@ h6 {
 a {
   color: $primary-color !important;
   text-decoration: none;
-}
-
-span,
-p {
-  font-size: toRem(16);
 }
 
 * {

@@ -4,6 +4,10 @@ $font-size-base: 16;
 $font-size-base-px: $font-size-base * 1px;
 
 $font-family-black: "Avenir Black", Arial, sans-serif;
+$font-family-book: "Avenir Book", Arial, sans-serif;
+$font-family-roman: "Avenir Roman", Arial, sans-serif;
+$font-family-heavy: "Avenir Heavy", Arial, sans-serif;
+$font-family-medium: "Avenir Medium", Arial, sans-serif;
 
 @function toRem($value) {
   $remValue: ($value / $font-size-base) + rem;
