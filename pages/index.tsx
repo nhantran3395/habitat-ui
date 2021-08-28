@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import NextLink from "next/link";
-import { Pane, Heading, Paragraph, majorScale } from "evergreen-ui";
 import Head from "../components/common/Head";
 import Layout from "../components/common/Layout";
 import Button from "../components/common/Button";
@@ -12,32 +11,29 @@ const Home: NextPage = () => {
     <>
       <Head pageName="home" description="" />
       <Layout>
-        <Pane
-          display="flex"
-          flexDirection="row"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <Pane margin={majorScale(5)}>
+        <div className="flex-row-container">
+          <div className="w-50">
             <Image src="/images/earth.svg" width={600} height={600} />
-          </Pane>
-          <Pane width={500} margin={majorScale(5)}>
-            <Heading size={900} marginY={majorScale(3)}>
+          </div>
+          <div className="w-50 m-3">
+            <h1>
               &quot;The greatest threat to our habitat is the belief that
               someone else will save it.&quot;
-            </Heading>
+            </h1>
 
-            <Paragraph size={500} marginY={majorScale(3)}>
+            <p>
               Curious to know how sustainable your lifestyle is? Take this quiz
               to discover your sustainability profile &amp; ways you can make a
               difference!
-            </Paragraph>
+            </p>
 
             <NextLink href="/quiz">
-              <Button marginY={majorScale(2)}>Take the quiz</Button>
+              <div className="my-3">
+                <Button>Take the quiz</Button>
+              </div>
             </NextLink>
-          </Pane>
-        </Pane>
+          </div>
+        </div>
 
         <SocialNetworkBar />
       </Layout>

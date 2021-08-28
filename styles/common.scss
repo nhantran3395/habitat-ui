@@ -1,6 +1,7 @@
 @import "color";
 @import "font";
 @import "base";
+@import "breakpoint";
 
 html,
 body {
@@ -68,4 +69,82 @@ body {
 
 .text-right {
   text-align: right;
+}
+
+.w-80 {
+  widht: 80%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.m-5 {
+  margin: toRem(40);
+}
+
+.m-4 {
+  margin: toRem(32);
+}
+
+.m-3 {
+  margin: toRem(24);
+}
+
+.m-2 {
+  margin: toRem(16);
+}
+
+.m-1 {
+  margin: toRem(8);
+}
+
+.my-2 {
+  margin-top: toRem(16);
+  margin-bottom: toRem(16);
+}
+
+.my-3 {
+  margin-top: toRem(24);
+  margin-bottom: toRem(24);
+}
+
+.my-4 {
+  margin-top: toRem(32);
+  margin-bottom: toRem(32);
+}
+
+.my-5 {
+  margin-top: toRem(40);
+  margin-bottom: toRem(40);
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media-query(tablet) {
+    flex-direction: row;
+  }
 }

@@ -7,14 +7,7 @@ const appName = process.env.NEXT_PUBLIC_APP_NAME;
 
 const Header = () => {
   return (
-    <Pane
-      width="80%"
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      margin={majorScale(3)}
-    >
+    <div className="w-80 h-20 flex-column-container">
       <NextLink href="/">
         <Link
           display="flex"
@@ -27,7 +20,7 @@ const Header = () => {
         </Link>
       </NextLink>
       <NavigationBar />
-    </Pane>
+    </div>
   );
 };
 
