@@ -2,7 +2,6 @@ import React from "react";
 import NextLink from "next/link";
 import { Pane, Heading, Link, majorScale } from "evergreen-ui";
 import NavigationBar from "../NavigationBar";
-import styles from "./Header.module.scss";
 
 const appName = process.env.NEXT_PUBLIC_APP_NAME;
 
@@ -10,7 +9,6 @@ const Header = () => {
   return (
     <Pane
       width="80%"
-      height={200}
       display="flex"
       flexDirection="column"
       alignItems="center"
