@@ -1,10 +1,12 @@
 @import "styles/color";
+@import "styles/breakpoint";
 
 .arrowButton {
-  &:hover {
-    h2 {
-      color: $secondary-color !important;
-    }
-    cursor: pointer;
+  cursor: pointer;
+
+  @include media-query(tablet) {
+    position: absolute;
+    top: 40vh;
+    right: 5vw;
   }
 }
