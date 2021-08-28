@@ -3,7 +3,7 @@ import Image from "next/image";
 import Head from "../../components/common/Head";
 import Layout from "../../components/common/Layout";
 
-const Resources: NextPage = () => {
+const CuriousExplorerResources: NextPage = () => {
   return (
     <>
       <Head pageName="my habitat" description="" />
@@ -193,4 +193,4 @@ const Resources: NextPage = () => {
   );
 };
 
-export default Resources;
+export default CuriousExplorerResources;

@@ -24,7 +24,7 @@ const MyHabitat: NextPage = () => {
             </NextLink>
           </div>
           <div className={`flex-column-container m-3 w-20 ${styles.habitat}`}>
-            <Image src="/images/savvy_swapper.svg" width={300} height={500} />
+            <Image src="/images/savvy-swapper.svg" width={300} height={500} />
             <h2 className="text-center">Savvy Swapper</h2>
             <p className="text-center">
               You thrive on giving preloved clothing a new lease of life and
