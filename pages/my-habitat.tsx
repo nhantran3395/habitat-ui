@@ -3,15 +3,15 @@ import { Pane } from "evergreen-ui";
 import Head from "../components/common/Head";
 import Layout from "../components/common/Layout";
 
-const SustainabilityProfile: NextPage = () => {
+const MyHabitat: NextPage = () => {
   return (
     <>
-      <Head pageName="Sustainability Profile" description="" />
+      <Head pageName="My Habitat" description="" />
       <Layout>
-        <Pane>Sustainability Profile</Pane>
+        <Pane>My Habitat</Pane>
       </Layout>
     </>
   );
 };
 
-export default SustainabilityProfile;
+export default MyHabitat;
