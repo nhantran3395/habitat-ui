@@ -45,7 +45,11 @@ const Quiz: NextPage = () => {
           alignItems="center"
           justifyContent="center"
         >
-          {isPending ? <Spinner /> : null}
+          {isPending ? (
+            <Pane margin={majorScale(5)}>
+              <Spinner />
+            </Pane>
+          ) : null}
           {!isPending && questions.length !== 0 ? (
             <>
               <Pane
