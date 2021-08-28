@@ -72,9 +72,9 @@ const SavvySwapperResouces: NextPage = () => {
               and bought, the less carbon is created with their transportation.
               Not only that, but you&apos;ll be supporting the local economy
               which means that in time you&apos;ll likely have even more local
-              items to choose from. If you support your local farmers' market,
-              you're also supporting more low-scale food agriculture which tends
-              to be more kind to the Earth.
+              items to choose from. If you support your local farmers&apos;
+              market, you&apos;re also supporting more low-scale food
+              agriculture which tends to be more kind to the Earth.
             </p>
 
             <h3 className="secondary justify-self-start align-self-start">
@@ -117,7 +117,7 @@ const SavvySwapperResouces: NextPage = () => {
               <p className="w-80 align-self-start">
                 Pre-Loved Podcast is a weekly interview show about rad vintage
                 style with guests you&apos;ll want to go thrifting with! Emily
-                Stochl - @emilymstochl - is the show's creator and host.
+                Stochl - @emilymstochl - is the show&apos;s creator and host.
                 <br />
                 <br />
                 Each episode is about second-hand fashion. We come at the
