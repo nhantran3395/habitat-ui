@@ -5,13 +5,14 @@ import {
   getAllQuestions,
   selectAllQuestions,
 } from "../../features/quiz/quizSlice";
-import { Pane, Heading, majorScale } from "evergreen-ui";
+import { Pane, majorScale } from "evergreen-ui";
 import Head from "../../components/common/Head";
 import Layout from "../../components/common/Layout";
 import Spinner from "../../components/common/Spinner";
 import Option from "../../components/quiz/Option";
 import QuestionIndicator from "../../components/quiz/QuestionIndicator";
 import ArrowButton from "../../components/quiz/ArrowButton";
+import styles from "../../styles/Quiz.module.scss";
 
 const Quiz: NextPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -61,24 +62,22 @@ const Quiz: NextPage = () => {
           ) : null}
           {!isPending && questions.length !== 0 ? (
             <>
-              <div className="flex-column-container w-60">
-                <h1>
-                  {questions[currentQuestionIndex].questions.questionText}
-                </h1>
+              <h1 className={`w-60 ${styles.question}`}>
+                {currentQuestionIndex + 1}.{" "}
+                {questions[currentQuestionIndex].questions.questionText}
+              </h1>
 
-                <div className="flex-column-container">
-                  {questions[currentQuestionIndex].listOptions.map((option) => (
-                    <Option
-                      margin={majorScale(2)}
-                      onClick={handleSelectOption}
-                      key={option.content}
-                    >
-                      {option.content}
-                    </Option>
-                  ))}
-                </div>
-
-                {isQuizFinished ? <ArrowButton /> : null}
+              <div className={`flex-column-container ${styles.options} w-60`}>
+                {questions[currentQuestionIndex].listOptions.map((option) => (
+                  <Option
+                    marginY={majorScale(2)}
+                    onClick={handleSelectOption}
+                    key={option.content}
+                    className={styles.option}
+                  >
+                    {option.content}
+                  </Option>
+                ))}
               </div>
 
               <Pane
@@ -96,6 +95,8 @@ const Quiz: NextPage = () => {
                   />
                 ))}
               </Pane>
+
+              {isQuizFinished ? <ArrowButton /> : null}
             </>
           ) : null}
         </div>

@@ -1,0 +1,8 @@
+@import "styles/breakpoint";
+@import "styles/base";
+
+.question {
+  @include media-query(tablet) {
+    height: toRem(130);
+  }
+}
