@@ -23,9 +23,7 @@ const Header = () => {
           margin={majorScale(2)}
           cursor="pointer"
         >
-          <Heading size={900} className={styles.heading}>
-            {appName}
-          </Heading>
+          <Heading size={900}>{appName}</Heading>
         </Link>
       </NextLink>
       <NavigationBar />
