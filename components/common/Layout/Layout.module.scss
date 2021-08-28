@@ -1,13 +1,19 @@
+@import "styles/base";
+
 .bottomLeftCorner {
-  position: absolute;
-  bottom: -50px;
-  left: -1px;
+  bottom: toRem(-20);
+  left: toRem(-20);
 }
 
 .topRightCorner {
+  top: toRem(-20);
+  right: toRem(-20);
+}
+
+.bottomLeftCorner,
+.topRightCorner {
   position: absolute;
-  top: -50px;
-  right: -1px;
+  width: 20vw;
 }
 
 .bottomRightCorner {

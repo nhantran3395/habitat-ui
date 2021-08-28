@@ -8,8 +8,8 @@ import styles from "./Layout.module.scss";
 const Layout = ({ children }: ILayoutProps) => {
   return (
     <Pane
-      width="100%"
-      height="100%"
+      width="100vw"
+      height="100vh"
       display="flex"
       alignItems="center"
       justifyContent="center"
@@ -17,17 +17,16 @@ const Layout = ({ children }: ILayoutProps) => {
       flexDirection="column"
     >
       <Pane className={styles.bottomLeftCorner}>
-        <Image src="/images/bottom-left-corner.svg" width={400} height={400} />
+        <Image src="/images/bottom-left-corner.svg" width={420} height={330} />
       </Pane>
 
       <Pane className={styles.topRightCorner}>
-        <Image src="/images/top-right-corner.svg" width={400} height={400} />
+        <Image src="/images/top-right-corner.svg" width={420} height={330} />
       </Pane>
 
       <Header />
       <Pane
         width="80%"
-        height="100%"
         display="flex"
         alignItems="center"
         justifyContent="center"
