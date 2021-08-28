@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import NextLink from "next/link";
-import { Pane, Heading, Paragraph, Text, majorScale } from "evergreen-ui";
+import { majorScale } from "evergreen-ui";
 import Head from "../../components/common/Head";
 import Layout from "../../components/common/Layout";
 import Button from "../../components/common/Button";
@@ -15,9 +15,9 @@ const OurMission: NextPage = () => {
           <div className="flex-column-container w-40">
             <span>You are the</span>
 
-            <h1 className="secondary">Conscious Consumer</h1>
+            <h1 className="secondary text-center">Conscious Consumer</h1>
 
-            <h3 className="m-1">Slow ecological steps</h3>
+            <h3 className="m-1 text-center">Slow ecological steps</h3>
 
             <p className="text-center">
               Timelessness, versatility and simplicity are some of your core
