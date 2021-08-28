@@ -112,6 +112,86 @@ const Resources: NextPage = () => {
             </p>
           </div>
         </div>
+
+        <div className="flex-column-container w-100">
+          <h3 className="w-80">New Habits for you</h3>
+
+          <div className="flex-row-container w-100">
+            <div className="flex-column-container m-3 w-25 align-self-start">
+              <Image
+                src="/images/good-together-podcast.svg"
+                width={370}
+                height={240}
+              />
+
+              <h4 className="align-self-start">Green Podcast</h4>
+
+              <h2 className="secondary">
+                Good Together: Ethical, Eco-Friendly, Sustainable Living
+              </h2>
+
+              <p className="w-80 align-self-start">
+                Living sustainably should be easier. Curious about a zero waste
+                lifestyle? Want to know what the “circular economy” or “slow
+                fashion” really means? Each episode, brought to you from
+                Brightly.eco by eco-experts Laura Alexander Wittig and Liza
+                Moiseeva, features daily, actionable tips to help you live your
+                life more sustainably. Start changing the world by listening to
+                a new, bite-sized episode every week. For more info, visit{" "}
+                <a>https://brightly.eco/podcast</a>
+              </p>
+            </div>
+
+            <div className="flex-column-container m-3 w-25 align-self-start">
+              <Image src="/images/slowood.svg" width={370} height={240} />
+
+              <h4 className="align-self-start">Green Living</h4>
+
+              <h2 className="secondary">
+                Slowood: Your Zero-Waste Organic Grocery Store
+              </h2>
+
+              <p className="w-80 align-self-start">
+                Slowood is a humble space where we offer eco alternatives. Step
+                by step, we work towards making Slowood an all-rounded store, so
+                you will have a choice to go green, when you are looking for
+                your daily basic needs. Every detail here coheres to the
+                principles of zero waste, sustainability and harmony. Recycled,
+                biodegradable, zero-waste and ecologically friendly are some of
+                the keywords our values are associated with – all the building
+                blocks of an eco-lifestyle. <br />
+                For more info, visit <a>https://www.slowood.hk/</a>
+              </p>
+            </div>
+
+            <div className="flex-column-container m-3 w-25 align-self-start">
+              <Image
+                src="/images/how-to-make-your-home-environmentally-friendly.svg"
+                width={370}
+                height={240}
+              />
+
+              <h4 className="align-self-start">Green Home</h4>
+
+              <h2 className="secondary">
+                How to Make Your Home Environmentally Friendly
+              </h2>
+
+              <p className="w-80 align-self-start">
+                There are many DIY techniques that can be used to make your home
+                more environmentally friendly. Most of the products required for
+                these techniques are inexpensive and can be purchased at your
+                local home improvement store. This instructable focuses on
+                evaluating 5 main areas in your home.
+                <br />
+                For more info, visit{" "}
+                <a>
+                  https://www.instructables.com/How-To-Make-Your-Home-Environmentally-Friendly/
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </Layout>
     </>
   );
