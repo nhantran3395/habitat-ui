@@ -39,51 +39,62 @@ const Quiz: NextPage = () => {
     <>
       <Head pageName="Quiz" description="" />
       <Layout>
-        {isPending ? <Spinner /> : null}
-        {!isPending && questions.length !== 0 ? (
-          <Pane
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Heading size={900} margin={majorScale(5)} width={800}>
-              {questions[currentQuestionIndex].questions.questionText}
-            </Heading>
-            <Pane
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-              justifyContent="center"
-            >
-              {questions[currentQuestionIndex].listOptions.map((option) => (
-                <Option
-                  width={800}
-                  margin={majorScale(2)}
-                  onClick={handleSelectOption}
-                  key={option.content}
+        <Pane
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+        >
+          {isPending ? <Spinner /> : null}
+          {!isPending && questions.length !== 0 ? (
+            <>
+              <Pane
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+                justifyContent="center"
+                height={500}
+                marginBottom={majorScale(3)}
+              >
+                <Heading size={900} margin={majorScale(5)} width={800}>
+                  {questions[currentQuestionIndex].questions.questionText}
+                </Heading>
+                <Pane
+                  display="flex"
+                  flexDirection="column"
+                  alignItems="center"
+                  justifyContent="center"
                 >
-                  {option.content}
-                </Option>
-              ))}
-            </Pane>
+                  {questions[currentQuestionIndex].listOptions.map((option) => (
+                    <Option
+                      width={800}
+                      margin={majorScale(2)}
+                      onClick={handleSelectOption}
+                      key={option.content}
+                    >
+                      {option.content}
+                    </Option>
+                  ))}
+                </Pane>
+              </Pane>
 
-            <Pane
-              display="flex"
-              flexDirection="row"
-              alignItems="center"
-              justifyContent="center"
-              margin={majorScale(5)}
-            >
-              {questions.map((question, questionIdx) => (
-                <QuestionIndicator
-                  key={question.questions.questionText}
-                  isCurrent={questionIdx === currentQuestionIndex}
-                />
-              ))}
-            </Pane>
-          </Pane>
-        ) : null}
+              <Pane
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+                justifyContent="center"
+                margin={majorScale(5)}
+              >
+                {questions.map((question, questionIdx) => (
+                  <QuestionIndicator
+                    key={question.questions.questionText}
+                    isCurrent={questionIdx === currentQuestionIndex}
+                  />
+                ))}
+              </Pane>
+            </>
+          ) : null}
+        </Pane>
       </Layout>
     </>
   );
