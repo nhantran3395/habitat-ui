@@ -6,4 +6,9 @@
   border-radius: toRem(30) !important;
   padding: toRem(16) toRem(32) !important;
   font-size: toRem(16) !important;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $secondary-color !important;
+  }
 }
