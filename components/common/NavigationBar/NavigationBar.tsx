@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
-import { Pane, Tablist, Link } from "evergreen-ui";
 import Tab from "../Tab";
 import routes from "../../../routes";
 import { IRoute } from "../../../routes/interfaces";
@@ -16,27 +15,21 @@ const NavigationBar = () => {
   const [tabs] = React.useState<IRoute[]>(routes);
 
   return (
-    <Pane
-      display="flex"
-      flexDirection="row"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Tablist>
-        {tabs.map((tab, index) => (
-          <NextLink href={tab.path} key={tab.name}>
-            <Tab
-              id={tab.name}
-              onSelect={() => setSelectedIndex(index)}
-              isSelected={index === selectedIndex}
-              aria-controls={`panel-${tab.name}`}
-            >
-              <Link>{tab.name}</Link>
-            </Tab>
+    <div className="flex-row-container">
+      {tabs.map((tab, index) => (
+        <Tab
+          onSelect={() => {
+            setSelectedIndex(index);
+          }}
+          isSelected={index === selectedIndex}
+          key={tab.name}
+        >
+          <NextLink href={tab.path}>
+            <a>{tab.name}</a>
           </NextLink>
-        ))}
-      </Tablist>
-    </Pane>
+        </Tab>
+      ))}
+    </div>
   );
 };
 

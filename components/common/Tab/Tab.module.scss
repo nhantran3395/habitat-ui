@@ -1,2 +1,6 @@
-.tab {
+@import "styles/base";
+@import "styles/color";
+
+.tabSelected {
+  border-bottom: toRem(3) solid $primary-color !important;
 }

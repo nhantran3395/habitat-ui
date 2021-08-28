@@ -43,7 +43,13 @@ span {
 
 a {
   color: $primary-color !important;
+
+  &:hover {
+    color: $secondary-color !important;
+  }
+
   text-decoration: none;
+  font-size: toRem(16);
 }
 
 * {

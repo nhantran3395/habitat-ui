@@ -1,9 +1,21 @@
 import React from "react";
-import { Tab as TabUI, TabProps } from "evergreen-ui";
+import { ITabProps } from "./interfaces";
 import styles from "./Tab.module.scss";
 
-const Tab = (props: TabProps) => {
-  return <TabUI {...props} className={styles.tab} />;
+const Tab = ({ onSelect, isSelected, children }: ITabProps) => {
+  const getClasses = () => {
+    let className = "";
+    if (isSelected) {
+      className += `${styles.tabSelected}`;
+    }
+    return className;
+  };
+
+  return (
+    <div onClick={onSelect} className={`${getClasses()} m-3`}>
+      {children}
+    </div>
+  );
 };
 
 export default Tab;
