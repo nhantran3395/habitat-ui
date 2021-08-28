@@ -176,17 +176,25 @@ a {
 }
 
 .align-self-start {
-  align-self: start;
+  @include media-query(tablet) {
+    align-self: start;
+  }
 }
 
 .align-self-end {
-  align-self: end;
+  @include media-query(tablet) {
+    align-self: end;
+  }
 }
 
 .justify-self-start {
-  justify-self: start;
+  @include media-query(tablet) {
+    justify-self: start;
+  }
 }
 
 .justify-self-end {
-  justify-self: end;
+  @include media-query(tablet) {
+    justify-self: end;
+  }
 }
