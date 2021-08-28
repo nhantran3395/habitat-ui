@@ -23,16 +23,17 @@ const SavvySwapperResouces: NextPage = () => {
 
             <p>
               You thrive on giving preloved clothing a new lease of life and
-              it’s no doubt that you’re called a swapaholic. Beyond fashion, it
-              comes naturally for you to seek more environmentally-friendly
-              transport and food alternatives.
+              it&apos;s no doubt that you&apos;re called a swapaholic. Beyond
+              fashion, it comes naturally for you to seek more
+              environmentally-friendly transport and food alternatives.
               <br />
               <br />
               So what can you and I do to overturn the damage? It seems like
               such an uphill task but it all starts by each one of us committing
-              to be more eco-friendly.It’s up to all of us to try and make
-              changes in the way we live. Change won’t come abruptly, so just do
-              whatever you can, and after a while, it will become a habit.
+              to be more eco-friendly.It&apos;s up to all of us to try and make
+              changes in the way we live. Change won&apos;t come abruptly, so
+              just do whatever you can, and after a while, it will become a
+              habit.
             </p>
           </div>
         </div>
@@ -52,7 +53,7 @@ const SavvySwapperResouces: NextPage = () => {
 
             <p>
               More than 2 million tons of clothing wind up in landfills each
-              year. By adding a few vintage items to your wardrobe, you’re
+              year. By adding a few vintage items to your wardrobe, you&apos;re
               keeping landfills a little less cluttered. You also reduce your
               carbon footprint, since new clothes involve a manufacturing
               process and then need to be transported to the store. Recycling
@@ -69,11 +70,11 @@ const SavvySwapperResouces: NextPage = () => {
             <p>
               From clothes to food, the closer to home these products are made
               and bought, the less carbon is created with their transportation.
-              Not only that, but you’ll be supporting the local economy which
-              means that in time you’ll likely have even more local items to
-              choose from. If you support your local farmers' market, you're
-              also supporting more low-scale food agriculture which tends to be
-              more kind to the Earth.
+              Not only that, but you&apos;ll be supporting the local economy
+              which means that in time you&apos;ll likely have even more local
+              items to choose from. If you support your local farmers' market,
+              you're also supporting more low-scale food agriculture which tends
+              to be more kind to the Earth.
             </p>
 
             <h3 className="secondary justify-self-start align-self-start">
@@ -115,8 +116,8 @@ const SavvySwapperResouces: NextPage = () => {
 
               <p className="w-80 align-self-start">
                 Pre-Loved Podcast is a weekly interview show about rad vintage
-                style with guests you’ll want to go thrifting with! Emily Stochl
-                - @emilymstochl - is the show's creator and host.
+                style with guests you&apos;ll want to go thrifting with! Emily
+                Stochl - @emilymstochl - is the show's creator and host.
                 <br />
                 <br />
                 Each episode is about second-hand fashion. We come at the
@@ -149,12 +150,12 @@ const SavvySwapperResouces: NextPage = () => {
                 sustainable way to buy clothing often at affordable prices.
                 <br />
                 <br />
-                If you’ve been shopping vintage for a while, you will have
+                If you&apos;ve been shopping vintage for a while, you will have
                 undoubtedly picked up a few gems that have got you hooked. If
-                you haven’t—you may not have been looking in the right places,
-                or in the right ways. If you’re looking to start thrifting or
-                vintage shopping regularly, we’ve put together this primer on
-                the fundamentals of vintage clothing.
+                you haven&apos;t—you may not have been looking in the right
+                places, or in the right ways. If you&apos;re looking to start
+                thrifting or vintage shopping regularly, we&apos;ve put together
+                this primer on the fundamentals of vintage clothing.
               </p>
             </div>
 
@@ -182,9 +183,9 @@ const SavvySwapperResouces: NextPage = () => {
                 ethical supply chain that creates high-quality, low-impact,
                 long-lasting products. We carefully consider our materials and
                 work with our production partners to reduce waste, chemicals,
-                and plastics that endanger our planet’s ecosystems. Our timeless
-                basics are designed to last—so making the right choice by the
-                planet can be as simple as putting on a T-shirt.
+                and plastics that endanger our planet&apos;s ecosystems. Our
+                timeless basics are designed to last—so making the right choice
+                by the planet can be as simple as putting on a T-shirt.
               </p>
             </div>
           </div>
