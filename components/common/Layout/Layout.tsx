@@ -24,20 +24,6 @@ const Layout = ({ children }: ILayoutProps) => {
         <Image src="/images/top-right-corner.svg" width={400} height={400} />
       </Pane>
 
-      <Pane
-        display="flex"
-        flexDirection="row"
-        alignItems="center"
-        justifyContent="center"
-        margin={majorScale(5)}
-        className={styles.bottomRightCorner}
-      >
-        <Image src="/images/facebook.svg" width={54} height={54} />
-        <Image src="/images/twitter.svg" width={47} height={47} />
-        <Image src="/images/instagram.svg" width={46} height={46} />
-        <Image src="/images/whatsapp.svg" width={38} height={38} />
-      </Pane>
-
       <Header />
       <Pane
         width="80%"

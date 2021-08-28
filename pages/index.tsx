@@ -5,6 +5,7 @@ import { Pane, Heading, Paragraph, majorScale } from "evergreen-ui";
 import Head from "../components/common/Head";
 import Layout from "../components/common/Layout";
 import Button from "../components/common/Button";
+import styles from "../components/common/Layout/Layout.module.scss";
 
 const Home: NextPage = () => {
   return (
@@ -36,6 +37,20 @@ const Home: NextPage = () => {
               <Button marginY={majorScale(2)}>Take the quiz</Button>
             </NextLink>
           </Pane>
+        </Pane>
+
+        <Pane
+          display="flex"
+          flexDirection="row"
+          alignItems="center"
+          justifyContent="center"
+          margin={majorScale(5)}
+          className={styles.bottomRightCorner}
+        >
+          <Image src="/images/facebook.svg" width={54} height={54} />
+          <Image src="/images/twitter.svg" width={47} height={47} />
+          <Image src="/images/instagram.svg" width={46} height={46} />
+          <Image src="/images/whatsapp.svg" width={38} height={38} />
         </Pane>
       </Layout>
     </>
