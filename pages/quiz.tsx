@@ -10,6 +10,7 @@ import Head from "../components/common/Head";
 import Layout from "../components/common/Layout";
 import Spinner from "../components/common/Spinner";
 import Option from "../components/quiz/Option";
+import QuestionIndicator from "../components/quiz/QuestionIndicator";
 
 const Quiz: NextPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -64,6 +65,18 @@ const Quiz: NextPage = () => {
                 >
                   {option.content}
                 </Option>
+              ))}
+            </Pane>
+
+            <Pane
+              display="flex"
+              flexDirection="row"
+              alignItems="center"
+              justifyContent="center"
+              margin={majorScale(5)}
+            >
+              {questions.map((question) => (
+                <QuestionIndicator />
               ))}
             </Pane>
           </Pane>
