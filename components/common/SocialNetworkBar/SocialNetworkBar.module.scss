@@ -1,0 +1,8 @@
+@import "styles/base";
+
+.bottomRightCorner {
+  position: absolute;
+  bottom: toRem(0);
+  right: toRem(0);
+  width: 20vw;
+}
