@@ -2,7 +2,8 @@
 @import "styles/base";
 
 .question {
+  margin-top: toRem(24);
   @include media-query(tablet) {
-    height: toRem(130);
+    height: 20vh;
   }
 }
