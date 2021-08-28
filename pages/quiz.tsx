@@ -75,8 +75,11 @@ const Quiz: NextPage = () => {
               justifyContent="center"
               margin={majorScale(5)}
             >
-              {questions.map((question) => (
-                <QuestionIndicator />
+              {questions.map((question, questionIdx) => (
+                <QuestionIndicator
+                  key={question.questions.questionText}
+                  isCurrent={questionIdx === currentQuestionIndex}
+                />
               ))}
             </Pane>
           </Pane>
