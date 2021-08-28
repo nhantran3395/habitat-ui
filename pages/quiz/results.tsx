@@ -33,7 +33,7 @@ const OurMission: NextPage = () => {
           </div>
           <div>
             <Image
-              src="/images/conscious_consumer.svg"
+              src="/images/conscious-consumer.svg"
               width={379}
               height={630}
             />
