@@ -28,7 +28,7 @@ const MyHabitat: NextPage = () => {
             <Heading size={600} marginY={majorScale(2)}>
               Savvy Swapper
             </Heading>
-            <Paragraph size={500} width={340}>
+            <Paragraph size={500} width={340} className="text-center">
               You thrive on giving preloved clothing a new lease of life and
               it’s no doubt that you’re called a swapaholic.
             </Paragraph>
@@ -48,7 +48,7 @@ const MyHabitat: NextPage = () => {
             <Heading size={600} marginY={majorScale(2)}>
               Conscious Consumer
             </Heading>
-            <Paragraph size={500} width={340}>
+            <Paragraph size={500} width={340} className="text-center">
               Timelessness, versatility and simplicity are some of your core
               beliefs. You’re constantly pushing yourself to make wiser choices
               to go green, whenever it doesn’t slip your mind.
@@ -69,7 +69,7 @@ const MyHabitat: NextPage = () => {
             <Heading size={600} marginY={majorScale(2)}>
               Curious Explorer
             </Heading>
-            <Paragraph size={500} width={340}>
+            <Paragraph size={500} width={340} className="text-center">
               Who says being trendy and ethical can’t coexist? Quirky, novel and
               ever-changing is probably how you would describe your approach to
               a greener lifestyle.

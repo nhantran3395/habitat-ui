@@ -1,0 +1,36 @@
+@mixin media-query($breakpoint) {
+  @if $breakpoint==phone {
+    @media (max-width: 599px) {
+      //for phone
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet {
+    @media (min-width: 600px) {
+      // for tablet
+      @content;
+    }
+  }
+
+  @if $breakpoint==tablet-landscape {
+    @media (min-width: 900px) {
+      // for tablet landscape up
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media (min-width: 1200px) {
+      // for ipad pro and desktop
+      @content;
+    }
+  }
+
+  @if $breakpoint==large-desktop {
+    @media (min-width: 1800px) {
+      // for large screen
+      @content;
+    }
+  }
+}

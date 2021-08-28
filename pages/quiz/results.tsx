@@ -33,7 +33,11 @@ const OurMission: NextPage = () => {
 
             <Heading size={600}>Slow ecological steps</Heading>
 
-            <Paragraph size={500} marginY={majorScale(3)}>
+            <Paragraph
+              size={500}
+              marginY={majorScale(3)}
+              className="text-center"
+            >
               Timelessness, versatility and simplicity are some of your core
               beliefs. You’re constantly pushing yourself to make wiser choices
               to go green, whenever it doesn’t slip your mind. The complexities
