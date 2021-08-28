@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-import { Pane, Heading, Paragraph, Text, majorScale } from "evergreen-ui";
+import NextLink from "next/link";
+import { majorScale } from "evergreen-ui";
 import Head from "../components/common/Head";
 import Layout from "../components/common/Layout";
+import Button from "../components/common/Button";
 
 const MyHabitat: NextPage = () => {
   return (
@@ -10,7 +12,17 @@ const MyHabitat: NextPage = () => {
       <Head pageName="my habitat" description="" />
       <Layout>
         <div className="flex-row-container">
-          <div className="flex-column-container m-3 w-25">
+          <div className="flex-column-container m-3 w-20">
+            <h1 className="text-center">my habitat</h1>
+            <p className="text-center">
+              Discover your hidden eco-lifestyle with these 10 questions of your
+              everyday habits.
+            </p>
+            <NextLink href="/quiz">
+              <Button margin={majorScale(3)}>Take the Quiz</Button>
+            </NextLink>
+          </div>
+          <div className="flex-column-container m-3 w-20">
             <Image src="/images/savvy_swapper.svg" width={300} height={500} />
             <h2 className="text-center">Savvy Swapper</h2>
             <p className="text-center">
@@ -18,11 +30,11 @@ const MyHabitat: NextPage = () => {
               it’s no doubt that you’re called a swapaholic.
             </p>
           </div>
-          <div className="flex-column-container m-3 w-25">
+          <div className="flex-column-container m-3 w-20">
             <Image
               src="/images/conscious_consumer.svg"
               width={400}
-              height={500}
+              height={700}
             />
             <h2 className="text-center">Conscious Consumer</h2>
             <p className="text-center">
@@ -31,7 +43,7 @@ const MyHabitat: NextPage = () => {
               to go green, whenever it doesn’t slip your mind.
             </p>
           </div>
-          <div className="flex-column-container m-3 w-25">
+          <div className="flex-column-container m-3 w-20">
             <Image
               src="/images/curious_explorer.svg"
               width={300}
