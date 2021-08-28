@@ -25,6 +25,15 @@ button {
   font-family: $font-family-black !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color !important;
+}
+
 a {
   color: $primary-color !important;
   text-decoration: none;
@@ -41,4 +50,8 @@ p {
 
 body {
   overflow: hidden;
+}
+
+.secondary {
+  color: $secondary-color !important;
 }

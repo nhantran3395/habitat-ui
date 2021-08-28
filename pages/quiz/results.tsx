@@ -27,13 +27,11 @@ const OurMission: NextPage = () => {
           >
             <Text size={500}>You are the</Text>
 
-            <Heading size={900} marginY={majorScale(2)} color="#29b79c">
+            <Heading size={900} marginY={majorScale(2)} className="secondary">
               Conscious Consumer
             </Heading>
 
-            <Heading size={600} color="#1a6652">
-              Slow ecological steps
-            </Heading>
+            <Heading size={600}>Slow ecological steps</Heading>
 
             <Paragraph size={500} marginY={majorScale(3)}>
               Timelessness, versatility and simplicity are some of your core
