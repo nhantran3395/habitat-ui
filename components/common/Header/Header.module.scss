@@ -1,0 +1,7 @@
+@import "styles/color";
+
+.appHeading {
+  &:hover {
+    color: $secondary-color !important;
+  }
+}
