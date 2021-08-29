@@ -62,7 +62,7 @@ const Quiz: NextPage = () => {
           ) : null}
           {!isPending && questions.length !== 0 ? (
             <>
-              <h1 className={`w-60 ${styles.question}`}>
+              <h1 className={`${styles.question}`}>
                 {currentQuestionIndex + 1}.{" "}
                 {questions[currentQuestionIndex].questions.questionText}
               </h1>

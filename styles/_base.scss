@@ -14,3 +14,29 @@ $font-secondary-regular: "Space Mono Regular", Arial, sans-serif;
   $remValue: ($value / $font-size-base) + rem;
   @return $remValue;
 }
+
+@mixin font-heading($heading) {
+  @if $heading==h1 {
+    font-size: toRem(32);
+  }
+
+  @if $heading==h2 {
+    font-size: toRem(28);
+  }
+
+  @if $heading==h3 {
+    font-size: toRem(24);
+  }
+
+  @if $heading==h4 {
+    font-size: toRem(20);
+  }
+
+  @if $heading==h5 {
+    font-size: toRem(18);
+  }
+
+  @if $heading==h6 {
+    font-size: toRem(16);
+  }
+}

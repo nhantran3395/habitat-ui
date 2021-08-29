@@ -4,6 +4,6 @@
 .question {
   margin-top: toRem(24);
   @include media-query(tablet) {
-    height: 20vh;
+    height: toRem(250);
   }
 }
