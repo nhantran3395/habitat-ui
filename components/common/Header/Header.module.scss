@@ -1,7 +1,15 @@
 @import "styles/color";
+@import "styles/breakpoint";
 
 .appHeading {
   &:hover {
     color: $secondary-color !important;
+  }
+}
+
+.header {
+  @include media-query(desktop) {
+    position: absolute;
+    top: 0;
   }
 }

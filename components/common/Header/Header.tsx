@@ -7,7 +7,7 @@ const appName = process.env.NEXT_PUBLIC_APP_NAME;
 
 const Header = () => {
   return (
-    <div className="w-80 h-20 flex-column-container">
+    <div className={`w-80 h-20 flex-column-container ${styles.header}`}>
       <NextLink href="/">
         <a>
           <h1 className={styles.appHeading}>{appName}</h1>
