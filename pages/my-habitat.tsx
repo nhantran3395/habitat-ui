@@ -37,8 +37,8 @@ const MyHabitat: NextPage = () => {
             <div className={`flex-column-container m-3 w-20 ${styles.habitat}`}>
               <Image
                 src="/images/conscious-consumer.svg"
-                width={400}
-                height={700}
+                width={300}
+                height={500}
               />
               <h2 className="text-center">Conscious Consumer</h2>
               <p className="text-center">
