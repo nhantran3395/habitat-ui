@@ -3,16 +3,17 @@
 
 .bottomLeftCorner {
   bottom: 0;
-  left: 0;
+  right: 100%;
+  position: sticky;
 }
 
 .topRightCorner {
   top: 0;
   right: 0;
+  position: absolute;
 }
 
 .bottomLeftCorner,
 .topRightCorner {
-  position: absolute;
   width: 15vw;
 }
