@@ -13,6 +13,7 @@ const Layout = ({ children }: ILayoutProps) => {
       </div>
 
       <Header />
+
       <div className="flex-container-column w-80">{children}</div>
 
       <div className={styles.bottomLeftCorner}>

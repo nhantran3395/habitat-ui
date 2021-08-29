@@ -9,11 +9,11 @@
 
 .topRightCorner {
   top: 0;
-  right: 0;
-  position: absolute;
+  left: 100%;
+  position: sticky;
 }
 
 .bottomLeftCorner,
 .topRightCorner {
-  width: 15vw;
+  width: 12vw;
 }
