@@ -12,8 +12,6 @@ const Layout = ({ children }: ILayoutProps) => {
         <Image src="/images/top-right-corner.svg" width={419} height={330} />
       </div>
 
-      <div className={styles.headerPlaceHolder} />
-
       <Header />
 
       <div className="flex-container-column w-80">{children}</div>
