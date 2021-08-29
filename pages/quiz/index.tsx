@@ -62,10 +62,10 @@ const Quiz: NextPage = () => {
           ) : null}
           {!isPending && questions.length !== 0 ? (
             <>
-              <h1 className={`${styles.question}`}>
+              <h2 className={`${styles.question}`}>
                 {currentQuestionIndex + 1}.{" "}
                 {questions[currentQuestionIndex].questions.questionText}
-              </h1>
+              </h2>
 
               <div className={`flex-column-container ${styles.options} w-60`}>
                 {questions[currentQuestionIndex].listOptions.map((option) => (
