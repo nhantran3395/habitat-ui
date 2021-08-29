@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { ILayoutProps } from "./interfaces";
-import { Pane, majorScale } from "evergreen-ui";
 import Header from "../Header";
+import SocialNetworkBar from "../SocialNetworkBar";
 import styles from "./Layout.module.scss";
 
 const Layout = ({ children }: ILayoutProps) => {
@@ -17,6 +17,8 @@ const Layout = ({ children }: ILayoutProps) => {
       <Header />
 
       <div className="flex-container-column w-80">{children}</div>
+
+      <SocialNetworkBar />
 
       <div className={styles.bottomLeftCorner}>
         <Image src="/images/bottom-left-corner.svg" width={419} height={330} />

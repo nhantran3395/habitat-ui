@@ -4,7 +4,6 @@ import NextLink from "next/link";
 import Head from "../components/common/Head";
 import Layout from "../components/common/Layout";
 import Button from "../components/common/Button";
-import SocialNetworkBar from "../components/common/SocialNetworkBar";
 
 const Home: NextPage = () => {
   return (
@@ -34,8 +33,6 @@ const Home: NextPage = () => {
             </NextLink>
           </div>
         </div>
-
-        <SocialNetworkBar />
       </Layout>
     </>
   );
