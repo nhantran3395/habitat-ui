@@ -13,7 +13,7 @@
     background-color: $secondary-color !important;
   }
 
-  @include media-query(tablet) {
+  @include media-query(desktop) {
     padding: toRem(16) toRem(48) !important;
   }
 }
