@@ -1,6 +1,16 @@
 @import "styles/base";
 @import "styles/color";
 
+.bottomLeftCorner,
+.topRightCorner {
+  width: 15vw;
+  position: sticky;
+  position: -webkit-sticky;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
 .bottomLeftCorner {
   bottom: 0;
   right: 100%;
@@ -9,13 +19,4 @@
 .topRightCorner {
   top: 0;
   left: 100%;
-}
-
-.bottomLeftCorner,
-.topRightCorner {
-  width: 12vw;
-  position: sticky;
-  position: -webkit-sticky;
-  padding: 0;
-  margin: 0;
 }
