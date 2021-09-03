@@ -6,7 +6,7 @@ import Head from "../../components/common/Head";
 import Layout from "../../components/common/Layout";
 import Button from "../../components/common/Button";
 
-const OurMission: NextPage = () => {
+const ConsciousConsumerResult: NextPage = () => {
   return (
     <>
       <Head pageName="quiz results" description="" />
@@ -27,7 +27,7 @@ const OurMission: NextPage = () => {
               building blocks of an eco-lifestyle.
             </p>
 
-            <NextLink href="/resources">
+            <NextLink href="/resources/conscious-consumer">
               <Button marginY={majorScale(2)}>Read More</Button>
             </NextLink>
           </div>
@@ -44,4 +44,4 @@ const OurMission: NextPage = () => {
   );
 };
 
-export default OurMission;
+export default ConsciousConsumerResult;
