@@ -14,7 +14,7 @@ const MyHabitat: NextPage = () => {
       <Layout>
         <div className="flex-row-container">
           <div className="flex-column-container m-3 w-25 align-self-start">
-            <h1 className="text-center">my habitat</h1>
+            <h1 className="align-self-start">my habitat</h1>
             <p className="text-left">
               Discover your hidden eco-lifestyle with these 10 questions of your
               everyday habits.
