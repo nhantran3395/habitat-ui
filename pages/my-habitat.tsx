@@ -13,14 +13,16 @@ const MyHabitat: NextPage = () => {
       <Head pageName="my habitat" description="" />
       <Layout>
         <div className="flex-row-container">
-          <div className="flex-column-container m-3 w-20 align-self-start">
+          <div className="flex-column-container m-3 w-25 align-self-start">
             <h1 className="text-center">my habitat</h1>
-            <p className="text-center">
+            <p className="text-left">
               Discover your hidden eco-lifestyle with these 10 questions of your
               everyday habits.
             </p>
             <NextLink href="/quiz">
-              <Button margin={majorScale(3)}>Take the Quiz</Button>
+              <div className="align-self-start my-2">
+                <Button>Take the Quiz</Button>
+              </div>
             </NextLink>
           </div>
           <NextLink href="/resources/savvy-swapper">
