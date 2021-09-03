@@ -27,8 +27,10 @@ const Quiz: NextPage = () => {
     dispatch(getAllQuestions());
   }, []);
 
-  const handleSelectOption = (event: MouseEvent) => {
-    const { optionId, questionId } = event.target.dataset;
+  const handleSelectOption = (event: MouseEvent<HTMLElement>) => {
+    const target = event.target as HTMLElement;
+    const optionId = target.dataset?.optionId ?? "";
+    const questionId = target.dataset?.questionId ?? "";
     updateSelections(optionId, questionId);
     goToNextQuestion();
     finishQuizWhenDoneAllQuestions();
