@@ -4,10 +4,12 @@ import {
   ThunkAction,
 } from '@reduxjs/toolkit';
 import quizReducer from '../features/quiz/quizSlice';
+import userProfileReducer from '../features/userProfile/userProfileSlice'
 
 export const store = configureStore({
   reducer: {
     quiz: quizReducer,
+    userProfile: userProfileReducer
   },
 });
 
