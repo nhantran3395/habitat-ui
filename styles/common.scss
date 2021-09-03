@@ -113,6 +113,10 @@ a {
   height: 60%;
 }
 
+.min-h-100vh {
+  min-height: 100vh;
+}
+
 .m-5 {
   margin: toRem(40);
 }

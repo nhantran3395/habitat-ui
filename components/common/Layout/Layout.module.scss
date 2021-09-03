@@ -4,18 +4,18 @@
 .bottomLeftCorner {
   bottom: 0;
   right: 100%;
-  position: sticky;
-  position: -webkit-sticky;
 }
 
 .topRightCorner {
   top: 0;
   left: 100%;
-  position: sticky;
-  position: -webkit-sticky;
 }
 
 .bottomLeftCorner,
 .topRightCorner {
   width: 12vw;
+  position: sticky;
+  position: -webkit-sticky;
+  padding: 0;
+  margin: 0;
 }
