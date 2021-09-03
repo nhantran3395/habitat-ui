@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, MouseEvent } from "react";
 import type { NextPage } from "next";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import {
@@ -12,11 +12,13 @@ import Spinner from "../../components/common/Spinner";
 import Option from "../../components/quiz/Option";
 import QuestionIndicator from "../../components/quiz/QuestionIndicator";
 import ArrowButton from "../../components/quiz/ArrowButton";
+import { ISelection } from "../../models/quiz";
 import styles from "../../styles/Quiz.module.scss";
 
 const Quiz: NextPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [isQuizFinished, SetIsQuizFinished] = useState(false);
+  const [selections, setSelections] = useState<ISelection[]>([]);
 
   const dispatch = useAppDispatch();
   const { questions, isPending, isError } = useAppSelector(selectAllQuestions);
@@ -25,9 +27,16 @@ const Quiz: NextPage = () => {
     dispatch(getAllQuestions());
   }, []);
 
-  const handleSelectOption = () => {
+  const handleSelectOption = (event: MouseEvent) => {
+    const { optionId, questionId } = event.target.dataset;
+    updateSelections(optionId, questionId);
     goToNextQuestion();
     finishQuizWhenDoneAllQuestions();
+  };
+
+  const updateSelections = (optionId: string, questionId: string) => {
+    const currentSelection = { optionId, questionId };
+    setSelections([...selections, currentSelection]);
   };
 
   const goToNextQuestion = () => {
@@ -73,6 +82,8 @@ const Quiz: NextPage = () => {
                     marginY={majorScale(2)}
                     onClick={handleSelectOption}
                     key={option.content}
+                    data-option-id={option.optionId}
+                    data-question-id={option.questionId}
                     className={styles.option}
                   >
                     {option.content}
