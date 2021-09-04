@@ -4,7 +4,7 @@ import NextLink from "next/link";
 import { IArrowButtonProps } from "./interfaces";
 import styles from "./ArrowButton.module.scss";
 
-const ArrowButton = ({ goToPage }: IArrowButtonProps) => {
+const ForwardArrowButton = ({ goToPage }: IArrowButtonProps) => {
   return (
     <NextLink href={goToPage}>
       <div className={`${styles.arrowButton} flex-column-container`}>
@@ -15,4 +15,4 @@ const ArrowButton = ({ goToPage }: IArrowButtonProps) => {
   );
 };
 
-export default ArrowButton;
+export default ForwardArrowButton;

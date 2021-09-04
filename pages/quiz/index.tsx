@@ -16,7 +16,7 @@ import Layout from "../../components/common/Layout";
 import Spinner from "../../components/common/Spinner";
 import Option from "../../components/quiz/Option";
 import QuestionIndicator from "../../components/quiz/QuestionIndicator";
-import ArrowButton from "../../components/quiz/ArrowButton";
+import FowardArrowButton from "../../components/quiz/FowardArrowButton";
 import ResultLoadingIndicator from "../../components/quiz/ResultLoadingIndicator";
 import styles from "../../styles/Quiz.module.scss";
 
@@ -154,7 +154,7 @@ const Quiz: NextPage = () => {
               ) : null}
 
               {isQuizFinished && !isProfilePending && profileName.length > 0 ? (
-                <ArrowButton goToPage={PROFILE_MAP.get(profileName)} />
+                <FowardArrowButton goToPage={PROFILE_MAP.get(profileName)} />
               ) : null}
             </>
           ) : null}
