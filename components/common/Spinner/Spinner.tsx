@@ -1,9 +1,8 @@
 import React from "react";
-import { Spinner as SpinnerUI, SpinnerProps } from "evergreen-ui";
-import styles from "./Spinner.module.scss";
+import Loader from "react-loader-spinner";
 
-const Spinner = (props: SpinnerProps) => {
-  return <SpinnerUI {...props} className={styles.spinner} />;
+const Spinner = () => {
+  return <Loader type="Oval" color="#1a6652" />;
 };
 
 export default Spinner;
