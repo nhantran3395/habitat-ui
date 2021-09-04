@@ -1,0 +1,12 @@
+@import "styles/color";
+@import "styles/breakpoint";
+
+.resultLoadingIndicator {
+  cursor: pointer;
+
+  @include media-query(tablet) {
+    position: absolute;
+    top: 40vh;
+    right: 5vw;
+  }
+}

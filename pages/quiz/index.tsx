@@ -5,6 +5,11 @@ import {
   getAllQuestions,
   selectAllQuestions,
 } from "../../features/quiz/quizSlice";
+import {
+  getProfileByUserId,
+  selectUserProfile,
+} from "../../features/userProfile/userProfileSlice";
+import { ISelection } from "../../models/quiz";
 import { Pane, majorScale } from "evergreen-ui";
 import Head from "../../components/common/Head";
 import Layout from "../../components/common/Layout";
@@ -12,19 +17,31 @@ import Spinner from "../../components/common/Spinner";
 import Option from "../../components/quiz/Option";
 import QuestionIndicator from "../../components/quiz/QuestionIndicator";
 import ArrowButton from "../../components/quiz/ArrowButton";
-import { ISelection } from "../../models/quiz";
+import ResultLoadingIndicator from "../../components/quiz/ResultLoadingIndicator";
 import styles from "../../styles/Quiz.module.scss";
+
+const PROFILE_MAP = new Map();
+PROFILE_MAP.set("Curious Explorer", "/quiz/results/curious-explorer");
+PROFILE_MAP.set("Conscious Consumer", "/quiz/results/conscious-consumer");
+PROFILE_MAP.set("Savvy Swapper", "/quiz/results/savvy-swapper");
 
 const Quiz: NextPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [isQuizFinished, SetIsQuizFinished] = useState(false);
+  const [isQuizFinished, setIsQuizFinished] = useState(false);
   const [selections, setSelections] = useState<ISelection[]>([]);
 
   const dispatch = useAppDispatch();
   const { questions, isPending, isError } = useAppSelector(selectAllQuestions);
+  const {
+    profileName,
+    isPending: isProfilePending,
+    isError: isProfileError,
+  } = useAppSelector(selectUserProfile);
 
   useEffect(() => {
-    dispatch(getAllQuestions());
+    if (questions.length === 0) {
+      dispatch(getAllQuestions());
+    }
   }, []);
 
   const handleSelectOption = (event: MouseEvent<HTMLElement>) => {
@@ -53,12 +70,35 @@ const Quiz: NextPage = () => {
 
   const finishQuizWhenDoneAllQuestions = () => {
     if (isOutOfQuestion(currentQuestionIndex)) {
-      SetIsQuizFinished(true);
+      setIsQuizFinished(true);
+      submitAnswerThenGetProfile();
     }
   };
 
   const isOutOfQuestion = (currentQuestionIdx: number) => {
     return currentQuestionIdx === questions.length - 1;
+  };
+
+  const submitAnswerThenGetProfile = async () => {
+    const userId = await submitAnswers(selections);
+    dispatch(getProfileByUserId(userId));
+  };
+
+  const submitAnswers = async (answers: ISelection[]) => {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_APP_HABITAT_API}/answer/answerQuestions`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(answers),
+      }
+    );
+
+    const data = await response.json();
+    const { userId } = data;
+    return userId;
   };
 
   return (
@@ -109,7 +149,13 @@ const Quiz: NextPage = () => {
                 ))}
               </Pane>
 
-              {isQuizFinished ? <ArrowButton /> : null}
+              {isQuizFinished && (profileName === "" || isProfilePending) ? (
+                <ResultLoadingIndicator />
+              ) : null}
+
+              {isQuizFinished && !isProfilePending && profileName.length > 0 ? (
+                <ArrowButton goToPage={PROFILE_MAP.get(profileName)} />
+              ) : null}
             </>
           ) : null}
         </div>
