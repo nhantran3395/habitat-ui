@@ -18,12 +18,8 @@ import Option from "../../components/quiz/Option";
 import QuestionIndicator from "../../components/quiz/QuestionIndicator";
 import FowardArrowButton from "../../components/quiz/FowardArrowButton";
 import ResultLoadingIndicator from "../../components/quiz/ResultLoadingIndicator";
+import { PROFILE_MAP } from "../../app/constants";
 import styles from "../../styles/Quiz.module.scss";
-
-const PROFILE_MAP = new Map();
-PROFILE_MAP.set("Curious Explorer", "/quiz/results/curious-explorer");
-PROFILE_MAP.set("Conscious Consumer", "/quiz/results/conscious-consumer");
-PROFILE_MAP.set("Savvy Swapper", "/quiz/results/savvy-swapper");
 
 const Quiz: NextPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -154,7 +150,9 @@ const Quiz: NextPage = () => {
               ) : null}
 
               {isQuizFinished && !isProfilePending && profileName.length > 0 ? (
-                <FowardArrowButton goToPage={PROFILE_MAP.get(profileName)} />
+                <FowardArrowButton
+                  goToPage={`/quiz/results/${PROFILE_MAP.get(profileName)}`}
+                />
               ) : null}
             </>
           ) : null}
