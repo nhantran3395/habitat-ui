@@ -28,7 +28,7 @@ const Resources: NextPage = () => {
       <Head pageName="resources" description="" />
       <Layout>
         <div className="flex-column-container">
-          <h2 className="text-center">Sorry you have't taken our quiz</h2>
+          <h2 className="text-center">Sorry you haven&apos;t taken our quiz</h2>
           <p className="text-center w-30">
             Discover your hidden eco-lifestyle with these 10 questions of your
             everyday habits.
