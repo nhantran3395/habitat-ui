@@ -44,7 +44,7 @@ const ConsciousConsumerResources: NextPage = () => {
 
         <div className="flex-row-container">
           <div className="flex-column-container m-3 w-30 align-self-start">
-            <Image src="/images/plastic_bag.svg" width={300} height={300} />
+            <Image src="/images/plastic_bag.svg" width={400} height={500} />
           </div>
           <div className="flex-column-container align-self-start m-3 w-50">
             <h2 className="justify-self-start align-self-start">
