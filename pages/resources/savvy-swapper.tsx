@@ -98,7 +98,7 @@ const SavvySwapperResouces: NextPage = () => {
         </div>
 
         <div className="flex-column-container w-100">
-          <h3 className="w-80">New Habits for you</h3>
+          <h3 className="w-80">New Habits for You</h3>
 
           <div className="flex-row-container w-100">
             <div className="flex-column-container m-3 w-25 align-self-start">
