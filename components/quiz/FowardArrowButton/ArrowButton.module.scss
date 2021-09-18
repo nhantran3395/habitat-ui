@@ -1,8 +1,25 @@
 @import "styles/color";
 @import "styles/breakpoint";
+@import "styles/base";
 
 .arrowButton {
   cursor: pointer;
+
+  .arrowIcon {
+    background: center no-repeat url("../../../public/images/arrow-right.svg");
+    width: toRem(50);
+    height: toRem(50);
+  }
+
+  &:hover {
+    h3 {
+      color: $secondary-color !important;
+    }
+
+    .arrowIcon {
+      background-image: url("../../../public/images/arrow-right-secondary.svg");
+    }
+  }
 
   @include media-query(tablet) {
     position: absolute;

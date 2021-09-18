@@ -8,7 +8,7 @@ const ForwardArrowButton = ({ goToPage }: IArrowButtonProps) => {
   return (
     <NextLink href={goToPage}>
       <div className={`${styles.arrowButton} flex-column-container`}>
-        <Image src="/images/arrow-right.svg" width={45} height={45} />
+        <div className={styles.arrowIcon} />
         <h3>View results</h3>
       </div>
     </NextLink>
