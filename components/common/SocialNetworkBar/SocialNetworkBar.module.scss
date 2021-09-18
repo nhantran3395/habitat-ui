@@ -1,18 +1,24 @@
 @import "styles/base";
 @import "styles/breakpoint";
 
-.bottomRightCorner {
+.socialNetworkBar {
   position: sticky;
-  bottom: toRem(10);
+  bottom: toRem(16);
   left: 100%;
-  width: 15vw;
+  margin-right: toRem(16);
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  @include media-query(phone) {
-    flex-direction: column;
+  @include media-query(tablet) {
+    flex-direction: row;
+    bottom: toRem(24);
+    margin-right: toRem(24);
+  }
+
+  .socialNetworkIconContainer {
+    margin: toRem(4) toRem(4);
   }
 }
